@@ -29,13 +29,14 @@
 
 .debug [class*="col_"]{
     background-color: rgba(255, 192, 203, 1);
-    height: 300px;
     border: 2px solid black;
 }
 
 @media screen and (max-width:767px){
-    .row{
-        width: 100%;
+
+    #lezioni .row,
+    #why .row {
+        background-color: rgba(242, 242, 205, 1);
     }
 
     .col_xs_1{
@@ -132,9 +133,12 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 991px){
-    .row{
-        width: 100%;
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+
+    #lezioni .row,
+    #why .row {
+        background-color: rgba(113, 165, 121, 0.459);
     }
 
     .col_md_1{
@@ -232,9 +236,6 @@
 }
 
 @media screen and (min-width:992px){
-    .row{
-        width: 100%;
-    }
     
     .col_lg_1{
         width: calc((100%/12) *1);
