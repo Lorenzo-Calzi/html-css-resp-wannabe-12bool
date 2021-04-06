@@ -2,8 +2,45 @@
   width: 992px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  padding-top: 10px;
 }
+
+/* SCREEN (<=767PX) */
+@media screen and (max-width:767px){
+
+  .row{
+    width: 100%;
+  }
+
+  .row h1{
+    font-size: 40px;
+    padding-top: 10px;
+  }
+
+  .row h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 25px;
+  }
+}
+/* /SCREEN (<=767PX) */
+
+/* SCREEN (768PX)><(991PX) */
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+  .row{
+    width: 100%;
+  }
+}
+/* /SCREEN (768PX)><(991PX) */
+
+/* SCREEN (>=992PX) */
+@media screen and (min-width:992px){
+  .row{
+    width: 100%;
+  }
+}
+/* /SCREEN (>=992PX) */
 
 /* BLOCCO LEZIONI */
 #lezioni .row>.left,
@@ -13,7 +50,6 @@
 }
 
 #lezioni .row img {
-  /* per centrare orizzontalmente */
   display: block;
   margin-right: auto;
   margin-left: auto;
